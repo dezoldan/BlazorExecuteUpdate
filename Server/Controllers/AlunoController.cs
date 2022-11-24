@@ -182,7 +182,7 @@ namespace BlazorApp1.Server.Controllers
             return await ServiceAluno.GetMetodo1();
         }
 
-        // Vídeo #18.
+        // Vídeo #18 e #31.
         [HttpPost("create2")]
         public async Task<IActionResult> CreateAsync2([FromBody] AlunosTeste alunosTeste)
         {

@@ -13,8 +13,17 @@ namespace BlazorApp1.Shared
     {
         [Key]
         public int Id { get; set; }
+
+        [Required]
+        [StringLength(15, ErrorMessage = "O primeiro nome do aluno é muito longo.")]
         public string Nome { get; set; } = string.Empty;
+        
+        [Required]
+        [StringLength(15, ErrorMessage = "O sobrenome é muito longo.")]
         public string Sobrenome { get; set; } = string.Empty;
+
+        [Required]
+        [Range(6, 80, ErrorMessage = "O valor deve ser entre 6 e 80")]
         public int Idade { get; set; }
 
         [NotMapped]

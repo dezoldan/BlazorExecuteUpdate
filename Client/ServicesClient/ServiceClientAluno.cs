@@ -1,8 +1,5 @@
 ﻿using BlazorApp1.Shared;
-<<<<<<< HEAD
 using System.Net.Http.Json;
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -39,16 +36,16 @@ namespace BlazorApp1.Client.ServicesClient
             }
             return null!;   
         }
-<<<<<<< HEAD
-
         // Vídeo #30. Refere-se a implementação no server do vídeo #15.
         public async Task PutAlunos1(AlunosTeste aluno)
         {
             await _httpClient.PutAsJsonAsync($"v0/Aluno/update30", aluno);
         }
+
+        // Vídeo #31.
+        public async Task PostAlunos1(AlunosTeste aluno)
+        {
+            await _httpClient.PostAsJsonAsync($"v0/Aluno/create2", aluno);
+        }
     }
 }
-=======
-    }
-}
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a

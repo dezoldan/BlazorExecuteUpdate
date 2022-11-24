@@ -1672,7 +1672,12 @@ C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\Vídeos\BlazorAppVideo#9\Client\
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\Vídeos\BlazorAppVideo#9\Client\obj\Debug\net6.0\refint\BlazorApp1.Client.dll
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\Vídeos\BlazorAppVideo#9\Client\obj\Debug\net6.0\BlazorApp1.Client.pdb
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\Vídeos\BlazorAppVideo#9\Client\obj\Debug\net6.0\ref\BlazorApp1.Client.dll
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.dll
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.pdb
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.dll
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.pdb
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorComponentUtilities.dll
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorPro.Spinkit.dll
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.11.pwtqun7c4n.js
@@ -1926,6 +1931,7 @@ C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.HttpListener.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.Annotations.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll.gz
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.Primitives.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js.gz
@@ -1960,6 +1966,7 @@ C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Windows.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Quic.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\icudt_EFIGS.dat.gz
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Primitives.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XDocument.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Options.dll.gz
@@ -1980,6 +1987,7 @@ C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Resources.Writer.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.CompilerServices.Unsafe.dll.gz
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.pdb.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Primitives.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Core.dll.gz
@@ -2046,6 +2054,7 @@ C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Transactions.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll.gz
+C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.pdb.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.ValueTuple.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Parallel.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Http.dll.gz
@@ -2070,15 +2079,6 @@ C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Abstractions.dll.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.DriveInfo.dll.gz
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.dll
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.pdb
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.dll
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.pdb
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.dll.gz
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.dll.gz
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Client.pdb.gz
-C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorApp1.Shared.pdb.gz
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\BlazorApp1.Client.staticwebassets.runtime.json
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\BlazorApp1.Client.dll
 C:\Users\dezol\OneDrive\Blazor-2022\Blazor-2022\YouTube\Vídeos\BlazorAppVideos\Client\bin\Debug\net6.0\BlazorApp1.Client.pdb

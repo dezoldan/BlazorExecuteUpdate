@@ -142,7 +142,6 @@ namespace BlazorApp1.Server.Controllers
             return await ServiceAluno.GetMetodo1();
         }
 
-<<<<<<< HEAD
         // Vídeo #30.
         [HttpPut("update30")]
         public async Task Update30([FromBody] AlunosTeste aluno)
@@ -150,9 +149,6 @@ namespace BlazorApp1.Server.Controllers
             await ServiceAluno.Update3(aluno);
         }
 
-
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
         // Vídeo #16. API Rest.
         [HttpPut("{id:int}")]
         public async Task<ActionResult<AlunosTeste>> UpdateAlunos(

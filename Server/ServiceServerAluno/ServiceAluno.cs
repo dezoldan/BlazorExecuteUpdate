@@ -232,7 +232,6 @@ namespace BlazorApp1.Server.ServiceServerAluno
         // Vídeo #15. Vídeos anteriores de updates são o vídeo #8 e o vídeo #9.
         public async Task Update3(AlunosTeste alunosTeste)
         {
-<<<<<<< HEAD
             var result = await DataContext.TableTeste
                 .Where(x => x.Id == alunosTeste.Id).AsNoTracking().FirstOrDefaultAsync();
             if (result != null)
@@ -240,10 +239,8 @@ namespace BlazorApp1.Server.ServiceServerAluno
                 DataContext.Entry(alunosTeste).State = EntityState.Modified;
                 await DataContext.SaveChangesAsync();
             }            
-=======
             DataContext.Entry(alunosTeste).State = EntityState.Modified;
             await DataContext.SaveChangesAsync();
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
         }
 
         // Vídeo #16. API Rest.

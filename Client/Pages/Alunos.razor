@@ -4,7 +4,21 @@
 @inject HttpClient Http
 @inject IServiceClientAluno _serviceAluno
 
-<h1 class="mb-4">Alunos <button type="button" class="btn btn-link" @onclick="() => GetAlunos()"><i style="font-size:2.5em;" class="bi bi-arrow-clockwise"></i></button></h1>
+<h1 class="mb-3">
+    Alunos <button type="button" class="btn btn-link"
+                   @onclick="() => GetAlunos()">
+        <i style="font-size:2.5em;"
+           class="bi bi-arrow-clockwise"></i>
+    </button>
+</h1>
+<h4 class="mb-3">
+    <button style="border-radius:20%;" class="btn btn-warning"
+            @onclick="AddAluno" type="button">
+        <b>
+            <i class="bi bi-person-plus-fill"></i> Incluir
+        </b>
+    </button>
+</h4>
 @if (alunosTestes == null)
 {
     <p><em>Loading...</em></p>
@@ -17,25 +31,12 @@ else
                 <tr>
 
                     <td style="width: 10%">Id</td>
-                    <td style="width: 15%">Nome</td>
-                    <td style="width: 25%">Sobrenome</td>
+                    <td style="width: 10%">Nome</td>
+                    <td style="width: 20%">Sobrenome</td>
                     <td style="width: 10%">Idade</td>
                     <td style="width: 10%">Excluir</td>
-                    <td style="width: 10%">Atualizar</td>
-                    <td style="width: 20%">+Infos</td>
-=======
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
-                    <td>Id</td>
-                    <td>Nome</td>
-                    <td>Sobrenome</td>
-                    <td>Idade</td>
-                    <td>Ação</td>
-                    <td>+Infos</td>
-<<<<<<< HEAD
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+                    <td style="width: 15%">Editar</td>
+                    <td style="width: 25%">+Infos</td>
                 </tr>
             </thead>
             <tbody>
@@ -53,49 +54,27 @@ else
                         <td>@aluno.Id</td>
                         <td>@aluno.Nome</td>
                         <td>@aluno.Sobrenome</td>
-<<<<<<< HEAD
-<<<<<<< HEAD
                         <td><input type="number" @bind-value="@aluno.Idade" class="input-group"></td>
-=======
-                        <td>@aluno.Idade</td>
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
-=======
-                        <td>@aluno.Idade</td>
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
                         <td>
                             <button class="btn btn-danger" type="button" @onclick="(() => DeleteClick(aluno.Id))">
                                 <i class="bi bi-trash"></i>
                             </button>
                         </td>
-<<<<<<< HEAD
-<<<<<<< HEAD
                         <td>
                             <button class="btn btn-danger" type="button" @onclick="(() =>
                                 PutAluno(aluno))">
                                 <i class="bi bi-pencil-fill"></i>
                             </button>
                         </td>
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
                         <td><i style="font-size:2em;" class="@icon1"></i></td>
                     </tr>
                     @if (aluno.IsRowExpanded)
                     {
                         <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
                             <td colspan="7">
-=======
-                            <td colspan="6">
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
-=======
-                            <td colspan="6">
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
                                 <div class="container bg-danger">
                                     <div style="background-color:#fffafa" class="card card-body">
-                                        <h5>A idade do aluno é: @aluno.Idade</h5>
+                                        <h5 style="text-align:left;">A idade do aluno é: @aluno.Idade</h5>
                                     </div>
                                 </div>
                             </td>
@@ -108,10 +87,51 @@ else
 }
 <SpinLoader IsLoading="isLoading1" Color="Green" Size="40px" Spinner="SpinnerType.Circle">
 </SpinLoader>
+
+<EditForm Model="@alunosTeste1" OnValidSubmit="@AdicionaAluno">
+    <DataAnnotationsValidator />
+    <div style="display:@visivel" class="container mb-3">
+        <div clas="row">
+            <div class="col-3">
+                <label class="form-label">
+                    <b>Nome: (*)</b>
+                </label>
+                <CustomInputText @bind-Value="alunosTeste1!.Nome" class="form-control"></CustomInputText>
+                <ValidationMessage For="() => alunosTeste1.Nome" />
+                <label style="color:blue; font-size:11px;">Count: @alunosTeste1.Nome.Length Máx: 15</label>
+            </div>
+            <div class="col-3">
+                <label class="form-label">
+                    <b>Sobrenome: (*)</b>
+                </label>
+                <CustomInputText @bind-Value="alunosTeste1!.Sobrenome" class="form-control"></CustomInputText>
+                <ValidationMessage For="() => alunosTeste1.Sobrenome" />
+                <label style="color:blue; font-size:11px;">Count: @alunosTeste1.Sobrenome.Length Máx: 15</label>
+            </div>
+            <div class="col-3">
+                <label class="form-label">
+                    <b>Idade: (*)</b>
+                </label>
+                <InputNumber @bind-Value="alunosTeste1!.Idade" class="form-control"></InputNumber>
+                <ValidationMessage For="() => alunosTeste1.Idade" />
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <button class="btn btn-secondary col-3" type="submit">
+                        <i class="bi bi-door-open"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
 @code {
     private IEnumerable<AlunosTeste>? alunosTestes;
+    private AlunosTeste? alunosTeste1 { get; set; } = new AlunosTeste();
     private bool isLoading1;
     private string icon1 = "bi bi-plus-circle-fill";
+    private string visivel = "none";
 
     protected override async Task OnInitializedAsync()
     {
@@ -138,10 +158,9 @@ else
         isLoading1 = true;
         await Task.Delay(1500);
         alunosTestes = await _serviceAluno.GetAlunos1();
+        visivel = "none";
         isLoading1 = false;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     // Vídeo #30 e refere-se ao vídeo #15.
     async Task PutAluno(AlunosTeste aluno)
@@ -151,8 +170,27 @@ else
         await _serviceAluno.PutAlunos1(aluno);
         isLoading1 = false;
     }
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
-=======
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+
+    // Vídeo #31.
+    void AddAluno()
+    {
+        visivel = "block";
+        StateHasChanged();
+    }
+
+    async Task AdicionaAluno()
+    {
+        isLoading1 = true;
+        await Task.Delay(1500);
+        AlunosTeste alunosTeste2 = new()
+            {
+                Nome = alunosTeste1!.Nome,
+                Sobrenome = alunosTeste1.Sobrenome,
+                Idade = alunosTeste1.Idade
+            };
+        await _serviceAluno.PostAlunos1(alunosTeste2);
+        alunosTestes = await _serviceAluno.GetAlunos1();
+        visivel = "none";
+        isLoading1 = false;
+    }
 }

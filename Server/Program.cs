@@ -10,11 +10,7 @@ builder.Services.AddRazorPages();
 // Habilita sqllocal
 string _connectionString2 = null!;
 _connectionString2 = "Server=.\\SQLExpress;DataBase=Alunos1;Trusted_Connection=True;TrustServerCertificate=true";
-<<<<<<< HEAD
 builder.Services.AddDbContext<DataContext>(options => { _ = options.UseSqlServer(_connectionString2); });
-=======
-builder.Services.AddDbContext<DataContext>(options => { options.UseSqlServer(_connectionString2); });
->>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IServiceAluno, ServiceAluno>();

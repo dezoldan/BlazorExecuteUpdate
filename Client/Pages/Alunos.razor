@@ -1,0 +1,139 @@
+﻿@page "/alunos"
+@using BlazorApp1.Client.ServicesClient;
+@using BlazorApp1.Shared;
+@inject HttpClient Http
+@inject IServiceClientAluno _serviceAluno
+
+<h1 class="mb-4">Alunos <button type="button" class="btn btn-link" @onclick="() => GetAlunos()"><i style="font-size:2.5em;" class="bi bi-arrow-clockwise"></i></button></h1>
+@if (alunosTestes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container">
+        <table class="table table-hover">
+            <thead style="font-weight:bold; font-size:1.2em;">
+                <tr>
+<<<<<<< HEAD
+                    <td style="width: 10%">Id</td>
+                    <td style="width: 15%">Nome</td>
+                    <td style="width: 25%">Sobrenome</td>
+                    <td style="width: 10%">Idade</td>
+                    <td style="width: 10%">Excluir</td>
+                    <td style="width: 10%">Atualizar</td>
+                    <td style="width: 20%">+Infos</td>
+=======
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>Sobrenome</td>
+                    <td>Idade</td>
+                    <td>Ação</td>
+                    <td>+Infos</td>
+>>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var aluno in alunosTestes)
+                {
+                    <tr @onclick="() => aluno.IsRowExpanded =! aluno.IsRowExpanded">
+                        @if (!aluno.IsRowExpanded)
+                        {
+                            icon1 = "bi bi-plus-circle-fill";
+                        }
+                        else
+                        {
+                            icon1 = "bi bi-x-circle";
+                        }
+                        <td>@aluno.Id</td>
+                        <td>@aluno.Nome</td>
+                        <td>@aluno.Sobrenome</td>
+<<<<<<< HEAD
+                        <td><input type="number" @bind-value="@aluno.Idade" class="input-group"></td>
+=======
+                        <td>@aluno.Idade</td>
+>>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+                        <td>
+                            <button class="btn btn-danger" type="button" @onclick="(() => DeleteClick(aluno.Id))">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </td>
+<<<<<<< HEAD
+                        <td>
+                            <button class="btn btn-danger" type="button" @onclick="(() =>
+                                PutAluno(aluno))">
+                                <i class="bi bi-pencil-fill"></i>
+                            </button>
+                        </td>
+=======
+>>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+                        <td><i style="font-size:2em;" class="@icon1"></i></td>
+                    </tr>
+                    @if (aluno.IsRowExpanded)
+                    {
+                        <tr>
+<<<<<<< HEAD
+                            <td colspan="7">
+=======
+                            <td colspan="6">
+>>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+                                <div class="container bg-danger">
+                                    <div style="background-color:#fffafa" class="card card-body">
+                                        <h5>A idade do aluno é: @aluno.Idade</h5>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+}
+<SpinLoader IsLoading="isLoading1" Color="Green" Size="40px" Spinner="SpinnerType.Circle">
+</SpinLoader>
+@code {
+    private IEnumerable<AlunosTeste>? alunosTestes;
+    private bool isLoading1;
+    private string icon1 = "bi bi-plus-circle-fill";
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Vídeo #19, e se refere a implementação no projeto Blazor Server do vídeo #01.
+        alunosTestes = await Http.GetFromJsonAsync<IEnumerable<AlunosTeste>>("v0/Aluno/metodo1");
+
+        // Vídeo #20.
+        //alunosTestes = await _serviceAluno.GetAlunos1();
+    }
+
+    // Vídeo #21, implementa o método delete no client, e se refere ao vídeo #10.
+    async Task DeleteClick(int id)
+    {
+        // Vídeo #22.
+        isLoading1 = true;
+        await Task.Delay(1500);
+        await Http.DeleteAsync($"v0/Aluno/delete1/{id}");
+        alunosTestes = await _serviceAluno.GetAlunos1();
+        isLoading1 = false;
+    }
+
+    async Task GetAlunos()
+    {
+        isLoading1 = true;
+        await Task.Delay(1500);
+        alunosTestes = await _serviceAluno.GetAlunos1();
+        isLoading1 = false;
+    }
+<<<<<<< HEAD
+
+    // Vídeo #30 e refere-se ao vídeo #15.
+    async Task PutAluno(AlunosTeste aluno)
+    {
+        isLoading1 = true;
+        await Task.Delay(1500);
+        await _serviceAluno.PutAlunos1(aluno);
+        isLoading1 = false;
+    }
+=======
+>>>>>>> 9af2f9ea61077024645110214d750cb5e70c607a
+}

@@ -12,13 +12,13 @@
     </button>
 </h1>
 <h4 class="mb-3">
-    <button style="border-radius:20%;" class="btn btn-warning"
-            @onclick="AddAluno" type="button">
+    <button @onclick="AddAluno" type="button" style="border-radius:20%;" class="btn btn-warning">
         <b>
             <i class="bi bi-person-plus-fill"></i> Incluir
         </b>
     </button>
 </h4>
+
 @if (alunosTestes == null)
 {
     <p><em>Loading...</em></p>
@@ -87,18 +87,17 @@ else
 }
 <SpinLoader IsLoading="isLoading1" Color="Green" Size="40px" Spinner="SpinnerType.Circle">
 </SpinLoader>
-
 <EditForm Model="@alunosTeste1" OnValidSubmit="@AdicionaAluno">
-    <DataAnnotationsValidator />
-    <div style="display:@visivel" class="container mb-3">
-        <div clas="row">
+    <DataAnnotationsValidator/>
+    <div style="display:@visivel" class="container">
+        <div class="row">
             <div class="col-3">
                 <label class="form-label">
                     <b>Nome: (*)</b>
                 </label>
-                <CustomInputText @bind-Value="alunosTeste1!.Nome" class="form-control"></CustomInputText>
-                <ValidationMessage For="() => alunosTeste1.Nome" />
-                <label style="color:blue; font-size:11px;">Count: @alunosTeste1.Nome.Length Máx: 15</label>
+                <CustomInputText @bind-Value="alunosTeste1!.Nome" class="form-control" />
+                    <ValidationMessage For="() => alunosTeste1.Nome"/>
+                        <label style="color:blue; font-size:11px;">Count: @alunosTeste1.Nome.Length Máx: 15</label>
             </div>
             <div class="col-3">
                 <label class="form-label">
@@ -126,11 +125,12 @@ else
     </div>
 </EditForm>
 
+
 @code {
     private IEnumerable<AlunosTeste>? alunosTestes;
-    private AlunosTeste? alunosTeste1 { get; set; } = new AlunosTeste();
     private bool isLoading1;
     private string icon1 = "bi bi-plus-circle-fill";
+    private AlunosTeste? alunosTeste1 { get; set; } = new AlunosTeste();
     private string visivel = "none";
 
     protected override async Task OnInitializedAsync()
@@ -175,10 +175,8 @@ else
     void AddAluno()
     {
         visivel = "block";
-        StateHasChanged();
     }
 
-    // Vídeo #31.
     async Task AdicionaAluno()
     {
         isLoading1 = true;
@@ -189,9 +187,10 @@ else
                 Sobrenome = alunosTeste1.Sobrenome,
                 Idade = alunosTeste1.Idade
             };
-        await _serviceAluno.PostAlunos1(alunosTeste2);
-        alunosTestes = await _serviceAluno.GetAlunos1();
-        visivel = "none";
-        isLoading1 = false;
+
+            await _serviceAluno.PostAluno1(alunosTeste2);
+            alunosTestes = await _serviceAluno.GetAlunos1();
+            visivel = "none";
+            isLoading1 = false;
     }
 }

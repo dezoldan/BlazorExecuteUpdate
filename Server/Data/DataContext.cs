@@ -9,8 +9,7 @@ namespace BlazorApp1.Server.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
 
-        }        
-
-        public DbSet<AlunosTeste> TableTeste { get; set; } = null!;
+        }
+        public DbSet<AlunosTeste> TableTeste { get; set; }
     }
 }

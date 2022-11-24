@@ -307,7 +307,7 @@ namespace BlazorApp1.Server.ServiceServerAluno
         public async Task<IEnumerable<AlunosTeste>> GetMetodo14(string sobrenome, int idade1)
         {
             return await DataContext.TableTeste
-                .FromSql($"SELECT * FROM TblTeste WHERE Sobrenome = {sobrenome}")
+                .FromSql($"SELECT * FROM TblTeste WHERE Sobrenome({sobrenome})")
                 .Where(x => x.Idade >= idade1)
                 .OrderByDescending(x => x.Idade)
                 .ToArrayAsync();
@@ -334,6 +334,19 @@ namespace BlazorApp1.Server.ServiceServerAluno
         {
             return await DataContext.TableTeste
                 .FromSql($"EXECUTE uspSearchSobrenomes {sobrenome}").ToArrayAsync();
-        }        
+        }     
+        
+        // Vídeo #32.
+        public async Task<int> Update4(int idade1, int id1)
+        {
+            AlunosTeste? alunosTeste = await DataContext
+                .TableTeste.FirstOrDefaultAsync(x => x.Id == id1);
+            if (alunosTeste != null)
+            {
+                return await DataContext.Database
+                    .ExecuteSqlAsync($"EXECUTE uspAtualizaIdade {idade1},{id1}");
+            }
+            else return 0;
+        }
     }
 }

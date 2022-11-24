@@ -43,9 +43,9 @@ namespace BlazorApp1.Client.ServicesClient
         }
 
         // Vídeo #31.
-        public async Task PostAlunos1(AlunosTeste aluno)
+        public async Task PostAluno1(AlunosTeste aluno)
         {
-            await _httpClient.PostAsJsonAsync($"v0/Aluno/create2", aluno);
-        }
+            await _httpClient.PostAsJsonAsync($"v0/Aluno/create1", aluno);
+        }       
     }
 }

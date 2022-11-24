@@ -174,7 +174,7 @@ namespace BlazorApp1.Server.Controllers
             }
         }
 
-        // Vídeo #17.
+        // Vídeo #17 e #31.
         [HttpPost("create1")]
         public async Task<IEnumerable<AlunosTeste>> CreateAluno([FromBody] AlunosTeste alunosTeste)
         {
@@ -182,7 +182,7 @@ namespace BlazorApp1.Server.Controllers
             return await ServiceAluno.GetMetodo1();
         }
 
-        // Vídeo #18 e #31.
+        // Vídeo #18.
         [HttpPost("create2")]
         public async Task<IActionResult> CreateAsync2([FromBody] AlunosTeste alunosTeste)
         {
@@ -238,5 +238,13 @@ namespace BlazorApp1.Server.Controllers
         {
             return await ServiceAluno.GetMetodo17(sobrenome);
         }
+
+        // Vídeo #32.
+        [HttpGet("atualizaidade/{idade1}/{id1}")]
+        public async Task<ActionResult<int>> Update4([FromRoute] int idade1, int id1)
+        {
+            await ServiceAluno.Update4(idade1, id1);
+            return id1;
+        }        
     }
 }

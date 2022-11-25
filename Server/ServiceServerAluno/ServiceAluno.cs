@@ -238,7 +238,7 @@ namespace BlazorApp1.Server.ServiceServerAluno
             {
                 DataContext.Entry(alunosTeste).State = EntityState.Modified;
                 await DataContext.SaveChangesAsync();
-            }            
+            }
             DataContext.Entry(alunosTeste).State = EntityState.Modified;
             await DataContext.SaveChangesAsync();
         }
@@ -334,8 +334,8 @@ namespace BlazorApp1.Server.ServiceServerAluno
         {
             return await DataContext.TableTeste
                 .FromSql($"EXECUTE uspSearchSobrenomes {sobrenome}").ToArrayAsync();
-        }     
-        
+        }
+
         // Vídeo #32.
         public async Task<int> Update4(int idade1, int id1)
         {
@@ -347,6 +347,31 @@ namespace BlazorApp1.Server.ServiceServerAluno
                     .ExecuteSqlAsync($"EXECUTE uspAtualizaIdade {idade1},{id1}");
             }
             else return 0;
+        }
+
+        // Vídeo #33. Outros vídeos sobre DELETE, vídeo #10 e vídeo #13.
+        public async Task DeleteAsync3(int id1)
+        {
+            AlunosTeste? alunos = await DataContext.TableTeste
+                .FirstOrDefaultAsync(x => x.Id == id1);
+            if (alunos != null)
+            {
+                await DataContext.TableTeste.Where(x => x.Id == id1).ExecuteDeleteAsync();
+            }
+        }
+
+        // Vídeo #34. Outros vídeos sobre UPDATE, vídeos #08, #09, #15, #16 e #32.
+        public async Task UpdateAsync6(int id1, string sobrenome)
+        {
+            AlunosTeste? alunos = await DataContext.TableTeste
+                .FirstOrDefaultAsync(x => x.Id.Equals(id1));
+            if (alunos != null)
+            {
+                await DataContext.TableTeste
+                    .Where(x => x.Id.Equals(id1))
+                    .ExecuteUpdateAsync(x => x
+                    .SetProperty(x => x.Sobrenome, sobrenome));                    
+            }
         }
     }
 }

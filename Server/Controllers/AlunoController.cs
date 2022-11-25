@@ -196,7 +196,7 @@ namespace BlazorApp1.Server.Controllers
         {
             return await ServiceAluno.GetMetodo11();
         }
-        
+
         // Vídeo #25.
         [HttpGet("metodo12/{sobrenome}")]
         public async Task<IEnumerable<AlunosTeste>> GetMetodo12([FromRoute] string sobrenome)
@@ -245,6 +245,20 @@ namespace BlazorApp1.Server.Controllers
         {
             await ServiceAluno.Update4(idade1, id1);
             return id1;
-        }        
+        }
+
+        // Vídeo #33. Outros vídeos sobre DELETE, vídeo #10 e vídeo #13.
+        [HttpDelete("delete3/{id1:int}")]
+        public async Task Delete3([FromRoute] int id1)
+        {
+            await ServiceAluno.DeleteAsync3(id1);
+        }
+
+        // Vídeo #34. Outros vídeos sobre UPDATE, vídeos #08, #09, #15, #16 e #32.
+        [HttpPut("update6/{id1:int}/{sobrenome}")]
+        public async Task Update6([FromRoute] int id1, string sobrenome)
+        {
+            await ServiceAluno.UpdateAsync6(id1, sobrenome);
+        }
     }
 }

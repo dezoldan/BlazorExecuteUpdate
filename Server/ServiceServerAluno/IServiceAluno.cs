@@ -11,6 +11,7 @@ namespace BlazorApp1.Server.ServiceServerAluno
         Task CreateAsync2(AlunosTeste alunosTeste);
         Task<string> Delete1(int id1);
         Task<int> Delete2(int id);
+        Task DeleteAsync3(int id1);
         Task<IEnumerable<AlunosTeste>> GetMetodo1();
         Task<List<AlunosTeste>> GetMetodo10(string sobrenome1);
         Task<IEnumerable<AlunosTeste>> GetMetodo11();
@@ -34,5 +35,6 @@ namespace BlazorApp1.Server.ServiceServerAluno
         Task<int> Update4(int idade1, int id1);
         Task<AlunosTeste> UpdateAlunos(AlunosTeste alunosTeste);
         Task<AlunosTeste> UpdateAlunosById(int id1);
+        Task UpdateAsync6(int id1, string sobrenome);
     }
 }
